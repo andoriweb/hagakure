@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Han Zi';
+    src: url('HanZi.eot');
+    src: local('Han Zi'), local('HanZi'),
+        url('HanZi.eot?#iefix') format('embedded-opentype'),
+        url('HanZi.woff2') format('woff2'),
+        url('HanZi.woff') format('woff'),
+        url('HanZi.ttf') format('truetype'),
+        url('HanZi.svg#HanZi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

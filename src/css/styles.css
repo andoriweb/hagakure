@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Han Zi';
+  src: url("../fonts/HanZi.eot");
+  src: local("../fonts/Han Zi"), local("../fonts/HanZi"), url("../fonts/HanZi.eot?#iefix") format("embedded-opentype"), url("../fonts/HanZi.woff2") format("woff2"), url("../fonts/HanZi.woff") format("woff"), url("../fonts/HanZi.ttf") format("truetype"), url("../fonts/") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+/*basic settings*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  font-family: 'Han Zi'; }
+
+img {
+  max-width: 100%; }
+
+.container {
+  max-width: 1530px;
+  width: 95%;
+  margin: 0 auto; }
