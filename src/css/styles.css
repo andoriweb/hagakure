@@ -12,7 +12,7 @@
           box-sizing: border-box; }
 
 body {
-  font-family: 'Han Zi'; }
+  font-family: 'Han Zi', serif; }
 
 img {
   max-width: 100%; }
@@ -21,3 +21,59 @@ img {
   max-width: 1530px;
   width: 95%;
   margin: 0 auto; }
+
+/*<header class="header">*/
+.header {
+  position: relative;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: url(../img/main-bg.jpg) center no-repeat;
+  background-size: cover; }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.4;
+    z-index: 1; }
+  .header__offer {
+    position: relative;
+    font-size: 100px;
+    color: #fff;
+    letter-spacing: 16px;
+    z-index: 2; }
+    .header__offer span {
+      display: block;
+      font-size: 60px;
+      margin-top: 60px;
+      letter-spacing: 10px;
+      line-height: 1.4; }
+
+/** Media **/
+@media (max-width: 992px) {
+  .header__offer {
+    font-size: 60px; }
+    .header__offer span {
+      font-size: 40px; } }
+
+@media (max-width: 576px) {
+  .header__offer {
+    font-size: 40px; }
+    .header__offer span {
+      font-size: 30px; } }
+
+@media (max-width: 390px) {
+  .header__offer {
+    letter-spacing: 5px; } }
