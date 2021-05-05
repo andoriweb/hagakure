@@ -22,6 +22,19 @@ img {
   width: 95%;
   margin: 0 auto; }
 
+.button {
+  font-size: 18px;
+  color: #000;
+  padding: 25px 90px;
+  border: 2px solid #8c1517;
+  border-radius: 10px; }
+
+small {
+  display: block;
+  font-size: 16px;
+  text-align: right;
+  margin-top: 45px; }
+
 /*<header class="header">*/
 .header {
   position: relative;
@@ -61,12 +74,109 @@ img {
       letter-spacing: 10px;
       line-height: 1.4; }
 
+/*<div class="readBook">*/
+.readBook {
+  height: 640px;
+  background: url(../img/readBook/samurai-bg.jpg) center no-repeat;
+  background-size: cover; }
+  .readBook-wrapper {
+    height: 640px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-bottom: 43px; }
+  .readBook__btn {
+    background-color: #d0d0d0; }
+
+/*<div class="myself">*/
+.myself {
+  padding-top: 20px; }
+  .myself-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .myself-img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 540px;
+            flex: 0 1 540px;
+    margin-right: 60px; }
+  .myself-text {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 750px;
+            flex: 0 0 750px;
+    font-size: 24px;
+    line-height: 1.6;
+    letter-spacing: 1px; }
+    .myself-text p:first-child {
+      font-size: 28px;
+      margin-bottom: 60px; }
+
 /** Media **/
+@media (max-width: 1200px) {
+  .myself-text {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 600px;
+            flex: 0 0 600px;
+    font-size: 20px; }
+    .myself-text p:first-child {
+      font-size: 24px;
+      margin-bottom: 40px; } }
+
 @media (max-width: 992px) {
   .header__offer {
     font-size: 60px; }
     .header__offer span {
-      font-size: 40px; } }
+      font-size: 40px; }
+  .myself {
+    padding: 60px 0; }
+    .myself-wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .myself-img {
+      max-height: 400px;
+      max-width: 300px;
+      margin-right: 0; }
+    .myself-text {
+      text-align: center;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 0px;
+              flex: 0 0 0;
+      max-width: 85%;
+      margin-top: 40px; } }
+
+@media (max-width: 780px) {
+  .readBook-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .readBook__btn {
+    margin-bottom: 30px; }
+  .myself-text {
+    max-width: 100%; } }
 
 @media (max-width: 576px) {
   .header__offer {
@@ -76,4 +186,12 @@ img {
 
 @media (max-width: 390px) {
   .header__offer {
-    letter-spacing: 5px; } }
+    letter-spacing: 5px; }
+  .readBook__btn {
+    width: 100%;
+    padding: 25px 0;
+    text-align: center; }
+  .myself-text {
+    font-size: 18px; }
+    .myself-text p:first-child {
+      font-size: 20px; } }

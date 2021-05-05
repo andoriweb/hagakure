@@ -1,11 +1,49 @@
 /** Media **/
+@media( max-width: 1200px )
+  .myself
+    &-text
+      flex: 0 0 600px
+      font-size: 20px
+      p:first-child
+        font-size: 24px
+        margin-bottom: 40px
+
+
 @media( max-width: 992px )
   .header
-
     &__offer
       font-size: 60px
       span
         font-size: 40px
+
+  .myself
+    padding: 60px 0
+    &-wrapper
+      flex-direction: column
+      justify-content: center
+    &-img
+      max-height: 400px
+      max-width: 300px
+      margin-right: 0
+    &-text 
+      text-align: center
+      flex: 0 0 0
+      max-width: 85%
+      margin-top: 40px     
+
+
+@media( max-width: 780px )
+  .readBook
+    &-wrapper
+      flex-direction: column
+      align-items: center
+      justify-content: flex-end
+    &__btn
+      margin-bottom: 30px
+
+  .myself
+    &-text
+      max-width: 100%
 
 
 @media( max-width: 576px )
@@ -20,3 +58,15 @@
   .header
     &__offer
       letter-spacing: 5px
+
+  .readBook
+    &__btn
+      width: 100%
+      padding: 25px 0
+      text-align: center
+
+  .myself
+    &-text 
+      font-size: 18px
+      p:first-child
+        font-size: 20px
