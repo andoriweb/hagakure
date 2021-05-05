@@ -25,11 +25,22 @@
       max-height: 400px
       max-width: 300px
       margin-right: 0
+      &_2
+        margin-left: 0
     &-text 
       text-align: center
       flex: 0 0 0
       max-width: 85%
-      margin-top: 40px     
+      margin-top: 40px
+
+  .download
+    &-wrapper
+      flex-direction: column
+      justify-content: flex-end
+      padding-bottom: 60px
+    &__btn:first-child
+      margin-bottom: 30px
+
 
 
 @media( max-width: 780px )
@@ -52,6 +63,12 @@
       font-size: 40px
       span
         font-size: 30px
+
+  .download
+    &__btn
+      width: 100%
+      text-align: center
+      padding: 25px 0
 
 
 @media( max-width: 390px )

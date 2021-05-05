@@ -96,6 +96,7 @@ small {
 
 /*<div class="myself">*/
 .myself {
+  background-color: #fff;
   padding-top: 20px; }
   .myself-wrapper {
     display: -webkit-box;
@@ -112,6 +113,9 @@ small {
         -ms-flex: 0 1 540px;
             flex: 0 1 540px;
     margin-right: 60px; }
+    .myself-img_2 {
+      margin-right: 0;
+      margin-left: 60px; }
   .myself-text {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 750px;
@@ -126,6 +130,23 @@ small {
 /*<div class="engraving"></div>*/
 .engraving {
   height: 100vh; }
+
+/*<div class="download">*/
+.download {
+  height: 100vh; }
+  .download-wrapper {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .download__btn {
+    color: #fff; }
 
 /** Media **/
 @media (max-width: 1200px) {
@@ -157,13 +178,26 @@ small {
       max-height: 400px;
       max-width: 300px;
       margin-right: 0; }
+      .myself-img_2 {
+        margin-left: 0; }
     .myself-text {
       text-align: center;
       -webkit-box-flex: 0;
           -ms-flex: 0 0 0px;
               flex: 0 0 0;
       max-width: 85%;
-      margin-top: 40px; } }
+      margin-top: 40px; }
+  .download-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-bottom: 60px; }
+  .download__btn:first-child {
+    margin-bottom: 30px; } }
 
 @media (max-width: 780px) {
   .readBook-wrapper {
@@ -186,7 +220,11 @@ small {
   .header__offer {
     font-size: 40px; }
     .header__offer span {
-      font-size: 30px; } }
+      font-size: 30px; }
+  .download__btn {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0; } }
 
 @media (max-width: 390px) {
   .header__offer {
