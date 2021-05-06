@@ -12,7 +12,8 @@
           box-sizing: border-box; }
 
 body {
-  font-family: 'Han Zi', serif; }
+  font-family: 'Han Zi', serif;
+  font-display: swap; }
 
 img {
   max-width: 100%; }
