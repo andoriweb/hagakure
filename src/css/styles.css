@@ -328,6 +328,26 @@ iframe {
   .footer__up {
     margin-bottom: 67px; }
 
+/*<section class="download audiobook">*/
+.audiobook {
+  background: #000 url(../img/audiobook/audio-ninja.jpg) center no-repeat;
+  background-size: cover;
+  padding-top: 50px; }
+  .audiobook-header {
+    font-size: 70px;
+    color: #e11a1d;
+    text-align: center; }
+  .audiobook-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
 /** Hover **/
 @media (min-width: 992px) {
   .button:hover {
