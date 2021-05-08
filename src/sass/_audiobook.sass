@@ -1,8 +1,8 @@
 /*<section class="download audiobook">*/
 .audiobook
-  background: #000 url(../img/audiobook/audio-ninja.jpg) center no-repeat
-  background-size: cover
-  padding-top: 50px
+  background: #000 url(../img/audiobook/audio-ninja.jpg) center top no-repeat
+  background-attachment: fixed
+  padding: 50px 0
 
   &-header
     font-size: 70px
@@ -12,4 +12,18 @@
   &-wrapper
     display: flex
     justify-content: space-between
-    align-items: center
+
+  &__title
+    font-size: 30px
+    color: #fff
+    margin: 50px 0 30px
+    text-align: center
+
+  &__list
+    text-align: center
+    
+    li 
+      margin-top: 10px
+
+  &__up
+    transform: rotate(-90deg)

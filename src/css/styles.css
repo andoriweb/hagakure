@@ -330,9 +330,9 @@ iframe {
 
 /*<section class="download audiobook">*/
 .audiobook {
-  background: #000 url(../img/audiobook/audio-ninja.jpg) center no-repeat;
-  background-size: cover;
-  padding-top: 50px; }
+  background: #000 url(../img/audiobook/audio-ninja.jpg) center top no-repeat;
+  background-attachment: fixed;
+  padding: 50px 0; }
   .audiobook-header {
     font-size: 70px;
     color: #e11a1d;
@@ -343,10 +343,19 @@ iframe {
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+            justify-content: space-between; }
+  .audiobook__title {
+    font-size: 30px;
+    color: #fff;
+    margin: 50px 0 30px;
+    text-align: center; }
+  .audiobook__list {
+    text-align: center; }
+    .audiobook__list li {
+      margin-top: 10px; }
+  .audiobook__up {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg); }
 
 /** Hover **/
 @media (min-width: 992px) {
@@ -413,6 +422,16 @@ iframe {
   .fotorama__img {
     text-align: center; } }
 
+@media (max-width: 850px) {
+  .audiobook-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
+
 @media (max-width: 780px) {
   .readBook-wrapper {
     -webkit-box-orient: vertical;
@@ -477,7 +496,11 @@ iframe {
     font-size: 24px;
     line-height: 1.5; }
   .video__block {
-    height: 300px; } }
+    height: 300px; }
+  .audiobook-header {
+    font-size: 60px; }
+  .audiobook__title {
+    font-size: 26px; } }
 
 @media (max-width: 390px) {
   .header__offer {
@@ -499,7 +522,9 @@ iframe {
     padding: 25px 0;
     text-align: center; }
     .footer__btn:first-child {
-      padding: 25px 0; } }
+      padding: 25px 0; }
+  .audiobook-header {
+    font-size: 49px; } }
 
 @media (max-height: 360px) {
   .castle {
