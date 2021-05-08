@@ -70,9 +70,7 @@ small {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
-  background: url(../img/main-bg.jpg) center no-repeat;
-  background-size: cover; }
+  text-align: center; }
   .header::before {
     content: '';
     position: absolute;
